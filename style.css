@@ -1,0 +1,368 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-LightItalic.woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("/Cormorant-Bold");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("Cormorant-BoldItalic");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Основные стили для тела страницы */
+body {
+  width: 1599px;
+  font-family: "Cormorant", serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 ;
+  color: #151618;
+}
+/* Основной контейнер заголовка */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: auto;
+}
+
+/* Контейнер для логотипа, навигации и иконок */
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  }
+
+/* Логотип сайта */
+.header__logo {
+  display: flex;
+}
+
+/* Навигационное меню */
+.header__nav {
+  width: 582px;
+  display: flex;
+  flex-direction: column;
+  border: #151618;
+  border-style: dashed;
+  padding: 0;
+}
+
+/* Список ссылок в навигационном меню */
+.nav-list {
+  display: flex;
+  gap: 65px;
+  font-family: "OpenSans";
+}
+
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+
+  color: #151618;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 400;
+  
+  /* margin: 0 3px; */
+
+}
+
+/* Иконки в правой части заголовка */
+.header__nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__nav-right-link {
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.header__nav-right-user {
+  display: inline-block;
+  margin-right: 80px;
+  margin-top: 12px;
+
+}
+
+.header__nav-right-searh {
+  display: inline-block;
+  margin-top: 16px;
+  margin-right: 5px;
+
+}
+
+/* Основной контейнер для изображения и текста */
+/* .header__main {
+  position: relative;
+  background-image: url("./../Picture/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 45px;
+
+} */
+
+/* Градиентный фон для основного контейнера */
+/* .header__main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
+} */
+
+/* Контейнер для текста, наложенного на изображение */
+.main__text-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Текст, наложенный на изображение */
+.main__text {
+  font-family:"Cormorant-Bold", ;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  margin-left: 2%;
+  padding: 20px;
+  border-radius: 8px;
+  /* Скругленные углы */
+}
+
+/* Заголовок текста */
+.title-h1_main__title {
+  font-weight: 400px;
+  font-size: 60px;
+  margin: 5px;
+  max-width: 790px;
+  width: 100%;
+  line-height: 60px;
+  margin-left: 152px;
+}
+
+/* Описание текста */
+.text_main__desc {
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 20px;
+  max-width: 560px;
+  width: 100%;
+  line-height: 29px;
+  margin-left: 158px;
+  
+}
+
+.Tea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 118px;
+
+}
+.container-text__tea p {
+  width: 702px;
+  height: 96px;
+  text-align: center;
+  font-family: "Cormorant-Bold";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 48px;
+  font-style: italic;
+}
+
+
+.Explore-Collections {
+  width: 1200px;
+  height: 355px;
+  display: flex;
+  width: 80%; 
+  margin: 0 auto;
+  margin-top: 110px;
+  
+  
+}
+
+.Explore h2 {
+  width: 100%;
+  height: 48px;
+  display:flex; 
+  justify-content: center;
+  margin: 0 auto;
+  display: inline-block;
+  margin-left: 25px;
+  text-align: center;
+  font-family: "Cormorant-Bold" ,;
+  line-height: 48px;
+  font-size: 39px;
+  color:#151618;
+  font-weight:400;
+  
+  
+}
+
+.list-tea {
+  width: 1200px;
+  height: 247px;
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  justify-content: center;
+  list-style: none;
+  
+}
+
+.tea-types p {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Cormorant-Bold";
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 0px;
+  margin-top: 5px;
+  
+}
+
+.container-What_our_Clients_say{
+  width: 1600px;
+  height: 397px;
+  background-color: #F7F2EA;
+  margin-top: 150px;
+  
+}
+
+.ClientSay h3 {
+  width: 329px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  
+  margin-left: 645px;
+  font-weight: 400;
+  line-height: 48px;
+  font-size: 34px;
+  border: 3px solid black
+}
+
+.Alice_Mad-Hater_Dorm_March{
+  width: 1198px;
+  height: 169px;
+  margin: 0 auto;
+  margin-top: 80px;
+  border: 3px solid black
+  
+ }
+
+ .Text-comments{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .Alice{
+  width: 280px;
+  height: 132px;
+  margin-right: 60px;  
+}
+
+.UAlice p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  font-family: "OpenSans-Regular", sans-serif ;
+  
+}
+
+
+
+/* Адаптивность */
+/*@media (max-width: 1200px) {
+    .header__container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header__nav {
+      margin-top: 20px;
+    }
+  
+    .header__nav-right {
+      margin-top: 20px;
+    }
+  
+    .main__title {
+      font-size: 40px;
+    }
+  
+    .main__desc {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header__main {
+      height: auto;
+      padding: 50px 20px;
+    }
+  
+    .main__text {
+      padding: 10px;
+    }
+  
+    .main__title {
+      font-size: 30px;
+    }
+  
+    .main__desc {
+      font-size: 16px;
+    }
+  }
+  
